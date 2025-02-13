@@ -1,6 +1,23 @@
 h1 {
   color: aqua;
 }
-span {
+
+/* #hello {
   color: rgb(194, 222, 53);
+} */
+.title {
+  color: brown;
+}
+.second {
+  color: blue;
+}
+.animals-list {
+  list-style: none;
+}
+.fruit-list {
+  list-style: none;
+}
+img {
+  height: 200px;
+  width: 300px;
 }
