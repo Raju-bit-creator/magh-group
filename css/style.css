@@ -37,7 +37,20 @@ table {
 }
 .one {
   padding: 80px 0px;
-  background: #59b484;
+  /* background: #59b484; */
+  background: url(../assets/wall.jpg);
+  /* background-size: cover;
+  background-position: center; */
+  position: relative;
+}
+.one-heading {
+  text-align: center;
+}
+.one-heading span {
+  color: #59b484;
+  font-size: 25px;
+  font-family: "Poppins";
+  font-weight: 600;
 }
 nav {
   display: flex;
@@ -51,4 +64,17 @@ nav {
   display: flex;
   gap: 20px;
   align-items: center;
+  margin-top: 13px;
+}
+.button1 {
+  margin-top: 11px;
+  background-color: #59b484;
+  padding: 8px 15px;
+  border: #59b484;
+  border-radius: 8px;
+  color: #fff;
+}
+.button1:hover {
+  background-color: #407e42;
+  cursor: pointer;
 }
