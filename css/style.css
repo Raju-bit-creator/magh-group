@@ -78,3 +78,9 @@ nav {
   background-color: #407e42;
   cursor: pointer;
 }
+.cat-image img {
+  width: 100%;
+}
+.two {
+  padding: 80px 0px;
+}
