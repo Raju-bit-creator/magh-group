@@ -98,3 +98,53 @@ nav {
   /* margin-right: 40px; */
   z-index: 113;
 }
+.four::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 50%;
+  height: 50px;
+  background: #407e42;
+}
+.four::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 50%;
+  height: 50px;
+  background: #041505;
+}
+.four .first-content {
+  /* padding: 40px; */
+
+  position: absolute;
+  color: #fff;
+  z-index: 111;
+}
+.four .second {
+  /* padding: 40px; */
+
+  position: absolute;
+  color: #5ab942;
+  z-index: 111;
+}
+
+/* before and after css property explore */
+@media only screen and (max-width: 992px) {
+  .four .second {
+    color: #431cc4;
+    margin-top: 50px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .four .second {
+    color: #c21515;
+    margin-top: 50px;
+  }
+}
+@media only screen and (max-width: 1070px) {
+  .four .second {
+    color: #c21515;
+    margin-top: 50px;
+  }
+}
