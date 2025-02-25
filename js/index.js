@@ -1,4 +1,4 @@
-// alert("are you sure to visit this page??");
+alert("are you sure to visit this page??");
 
 // let conf = confirm("are you okay?");
 // console.log(conf);
