@@ -71,12 +71,12 @@ function findCountryCode(countryName) {
   for (let index = 0; index < countries.length; index++) {
     const element = countries[index];
 
-    if (element.name.toLocaleLowerCase() === countryName) {
+    if (element.name.toLocaleLowerCase() === countryName.toLocaleLowerCase()) {
       return element.code;
     }
   }
 }
-console.log(findCountryCode("India"));
+console.log(findCountryCode("japan"));
 
 // function sum(a, b) {
 //   return a * b;
