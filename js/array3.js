@@ -68,15 +68,23 @@ let countries = [
 ];
 
 function findCountryCode(countryName) {
-  for (let index = 0; index < countries.length; index++) {
-    const element = countries[index];
+  for (let i = 0; i < countries.length; i++) {
+    const element = countries[i];
 
     if (element.name.toLocaleLowerCase() === countryName.toLocaleLowerCase()) {
       return element.code;
+    } else {
+      return "code not found";
     }
   }
 }
-console.log(findCountryCode("japan"));
+
+// console.log(" the country code of japan is:", country);
+
+//template literal to find country
+const countryName = "Brazil";
+const countryCode = findCountryCode(countryName);
+console.log(`the country code of ${countryName} is: ${countryCode}`);
 
 // function sum(a, b) {
 //   return a * b;
