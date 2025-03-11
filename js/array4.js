@@ -48,3 +48,38 @@ cartItems.map((prod) => {
     console.log(`${prod.name}, total expenditure is, ${total}`);
   }
 });
+
+let courses = [
+  {
+    class: "Pyhton",
+    completedStatus: false,
+  },
+  {
+    class: "Mern",
+    completedStatus: true,
+  },
+  {
+    class: "Ui/UX",
+    completedStatus: false,
+  },
+  {
+    class: "Data science",
+    completedStatus: false,
+  },
+  {
+    class: "Devops",
+    completedStatus: true,
+  },
+];
+
+let completed = [];
+let inComplete = [];
+courses.forEach((course) => {
+  if (course.completedStatus) {
+    completed.push(course.class);
+  } else {
+    inComplete.push(course.class);
+  }
+});
+console.log("this is course compelted array", completed);
+console.log("this is course not compelted array", inComplete);
