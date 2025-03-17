@@ -12,17 +12,17 @@ let user = {
 // localStorage.setItem("token1", "dfds2errtfegdfi3r543656575676576");
 // localStorage.setItem("user", JSON.stringify(user)); // convert user object to string
 
-console.log("name of user", user.name);
-let stringUser = JSON.stringify(user);
-// console.log("this is strign format", stringUser);
-localStorage.setItem("user1", stringUser);
+// console.log("name of user", user.name);
+// let stringUser = JSON.stringify(user);
+// // console.log("this is strign format", stringUser);
+// localStorage.setItem("user-first", stringUser);
 
 // now get setItem
-let storedUser = localStorage.getItem("user1");
+let storedUser = localStorage.getItem("user-first");
 console.log("stored user", storedUser);
-console.log(storedUser.name);
+console.log("stored user new", storedUser.name); // undefined this is in string format
 let objectUser = JSON.parse(storedUser);
-console.log("this is object format", objectUser.name);
+console.log("stored user new", objectUser.name);
 
 // let stringUser = {
 //   name: "John",
