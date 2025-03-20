@@ -223,6 +223,11 @@
               <p>
                 Our services are designed to meet the needs of our customers.
               </p>
+              <!-- js dom -->
+
+              <!-- //selecting elements, adding event listeners, and updating the DOM -->
+              <button class="btn btn-primary" id="myButton">Click me!</button>
+              <p id="demo"></p>
             </div>
           </div>
         </div>
@@ -245,6 +250,15 @@
         </div>
       </div>
     </div>
+
+    <script>
+      const button = document.getElementById("myButton");
+      const demo = document.getElementById("demo");
+
+      button.addEventListener("click", function () {
+        demo.textContent = "you clicked me";
+      });
+    </script>
     <script src="./js/promise.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
@@ -262,3 +276,5 @@
 <!-- assignment create a responsive menu for mobile, hero section text align centre
 and add 2 buttons -->
 <!-- positon css property -->
+
+<!-- git config --global user.name "Your Name" and git config --global user.email -->
