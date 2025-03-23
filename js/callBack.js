@@ -20,7 +20,7 @@
 //   return x;
 // };
 // const addNumber1 = add1(10);
-// console.log(addNumber1);
+// console.log(addNumber1);/////
 
 function fetchData(c) {
   console.log("api is fetching...");
